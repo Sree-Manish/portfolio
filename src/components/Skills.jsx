@@ -33,7 +33,7 @@ export default function Skills() {
 
   return (<section>
     <h2 id="Skills" className="text-center" style={{'--ptop': '200px'}}>Skills</h2>
-    <div className="flex justify-center flex-wrap gap-[50px]" style = {{  padding: '70px 16vw'}}>
+    <div className="flex justify-center flex-wrap skills-container" style = {{  padding: '70px 16vw'}}>
       <SkillCard />
     </div>
     </section>

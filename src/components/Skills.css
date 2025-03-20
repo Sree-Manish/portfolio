@@ -20,11 +20,15 @@
     font-size: 5em;
     padding-top: var(--ptop);
 }
+
+.skills-container{
+  gap: 50px;
+}
  
 .skcards{
   padding: 16px;
   backdrop-filter: blur(6px);
-  width: 150px;
+  width: 180px;
   box-shadow: inset 0 0 15px -2px rgba(255,255,255,0.5);
   border-radius: 10px;
   color: white;
@@ -39,4 +43,14 @@
   cursor: pointer;
   transform: translateY(-10px);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+@media (max-width: 800px){
+  .skcards{
+    width: 130px;
+  }
+
+  .skills-container{
+    gap: 30px;
+  }
 }

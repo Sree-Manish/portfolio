@@ -95,11 +95,11 @@ nav li {
 
 @media (max-width:800px){
   .logo{
-    font-size: 1.4em;
+    display: none;
   }
 
   nav{
-    width: 60vw;
+    width: 75vw;
     font-size: 1.1em;
   }
 
