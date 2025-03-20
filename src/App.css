@@ -1,0 +1,107 @@
+@import url("https://cdn.jsdelivr.net/gh/yesiamrocks/cssanimation.io@1.0.3/cssanimation.min.css");
+@import 'tailwindcss';
+
+@font-face {
+  font-family: 'Scripto';
+  src: url('./fonts/Scripto.woff2') format('woff2'),
+      url('./fonts/Scripto.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100vh;
+  scroll-behavior: smooth;
+}
+
+.App {
+  font-family: sans-serif;
+}
+
+body {
+  color: whitesmoke;
+}
+
+.Header {
+  width: 100vw;
+  position: relative;
+}
+
+nav {
+  background: radial-gradient(70% 80% at center center,hsl(0, 0%, 0%, 0.5),hsl(0,0%,0%,0.8) );
+  border: solid hsl(0, 0%, 30%, 0.25) 3px;
+  border-radius: 50px;
+  position: fixed;
+  z-index: 100;
+  top: 30px;
+  left: 50%;
+  transform: translate(-50%);
+  backdrop-filter: blur(10px);
+  color: #aaa;
+  box-shadow: inset 0 0 15px -5px rgba(255,255,255,0.5);
+  margin: auto;
+  font-size: 1.3rem;
+}
+
+nav ul {
+  display: flex;
+  margin: 0;
+  gap: 20px;
+  justify-content: center;
+  padding-inline: 40px;
+}
+
+nav a:link {
+  cursor: pointer;
+  border-radius: 50px;
+  padding: 8px 10px;   
+  text-decoration: none;
+  color: #aaa;
+}
+
+nav a:hover{
+  position: relative;
+  background-color: unset;
+  color: #fff;
+}
+
+nav li {
+  list-style: none;
+  padding-block: 15px;
+}
+
+.logo{
+  position: fixed;
+  top: 30px;
+  left: 30px;
+  font-family: 'Scripto', sans-serif;
+  font-size: 2em;
+  font-weight: normal;
+  font-style: normal;
+  text-shadow:   
+         2px  2px 0 gray;
+}
+
+@media (max-width:800px){
+  .logo{
+    font-size: 1.4em;
+  }
+
+  nav{
+    width: 60vw;
+    font-size: 1.1em;
+  }
+
+
+}

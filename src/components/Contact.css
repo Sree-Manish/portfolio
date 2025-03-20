@@ -1,0 +1,86 @@
+#Contact{
+    padding-block: 12vh 15vh;
+}
+
+.container.contact_container{
+    width: 58%;
+    display: grid;
+    grid-template-columns: 30% 58%;
+    gap: 12%;
+    margin: 5vh auto;
+}
+
+.contact_options{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.contact_option{
+    background: #2c2c6c;
+    padding: 1.2rem;
+    border-radius: 1.2rem;
+    text-align: center;
+    border: 1px solid transparent;
+    transition: all 400ms ease;
+    font-size: 1.2rem;
+}
+
+.contact_option:hover{
+    background: transparent;
+    border-color: #2c2c6c ;
+}
+
+.contact_option-icon{
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.contact_option a:link{
+    margin: top 0.7rem ;
+    display: inline-block;
+    font-size: 1rem;
+    text-decoration: none;
+    color: #0d9dfd;
+}
+
+#Contact :is(.btn,a){
+    margin-block: 1vh;
+    padding-block: 1vh;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: transform 0.15s ease-in-out;
+}
+
+#Contact .btn:hover{
+    background-color: rgba(255,255,255, 0.9);
+    color: black;
+    transform: translateY(-4px);
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+input, textarea{
+    width: 100%;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    background: transparent;
+    border: 2px solid #2c2c6c;
+    color: white;
+}
+
+@media screen and (max-width:1024px){
+   .container.contact_container{
+    grid-template-columns: 1fr;
+    gap: 2rem;
+   }
+    }
+    @media screen and (max-width:600px){
+    .container.contact_container{
+        width: 90%;
+    }
+    }
