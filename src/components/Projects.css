@@ -35,16 +35,16 @@
     background-color: rgba(30, 30, 30, 0.2);
     color: #ffffff;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2),
-                inset 0 0 16px -8px white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), inset 0 0 16px -8px white;
     overflow: hidden;
-    width: 32vw;
-    aspect-ratio: 1/1;
+    width: clamp(350px, 45%, 575px);
+    aspect-ratio: 1 / 1.1;
     transition: transform 0.3s, box-shadow 0.3s;
     backdrop-filter: blur(6px);
     padding: 20px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
 
@@ -78,8 +78,8 @@
 .visit-site{
     background-color: white;
     color: black;
-    font-size: 1.25rem;
-    padding: 0.25em 0.5em;
+    font-size: 110%;
+    padding: 0.2em 0.4em;
     border-radius: 10px;
     box-shadow: 0 4px 2px 2px black;
 }
