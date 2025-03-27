@@ -39,7 +39,6 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), inset 0 0 16px -8px white;
     overflow: hidden;
     width: clamp(325px, 45%, 550px);
-    aspect-ratio: 1 / 1.1;
     transition: transform 0.3s, box-shadow 0.3s;
     backdrop-filter: blur(6px);
     padding: 20px;
@@ -82,10 +81,14 @@
     padding: 0.2em 0.4em;
     border-radius: 10px;
     box-shadow: 0 4px 2px 2px black;
+    height: 2.25rem;
 }
 
 .visit-site:hover{
-    transform: translateY(-6px);
+    transform: translateY(-2px);
+    cursor: pointer;
+    filter: invert(0.9);
+    box-shadow: none;
 }
 
 @media (max-width: 1000px){
@@ -97,7 +100,7 @@
 @media (max-width: 800px){
 
     .project-card{
-        width: max(350px,75%);
+        width: max(350px,80%);
     }
 
     .service-card{

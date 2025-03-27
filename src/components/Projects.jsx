@@ -33,7 +33,7 @@ export default function Projects() {
             <h3 className="project-title">{project.name}</h3>
             <p className="project-description">{project.desc}</p>
           </div>
-          <div className="text-right">
+          <div className="text-center">
             <button className="visit-site">Visit Site</button>
           </div>
         </div>

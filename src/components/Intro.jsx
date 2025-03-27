@@ -64,7 +64,7 @@ export default function Intro() {
       <div className="smalling">
         <img
           className="img1"
-          src="https://w0.peakpx.com/wallpaper/863/441/HD-wallpaper-kyojuro-rengoku.jpg"
+          src="profile.jpg"
           alt="myself"
         ></img>
         <div className="backtest">
