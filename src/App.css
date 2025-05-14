@@ -1,4 +1,3 @@
-@import url("https://cdn.jsdelivr.net/gh/yesiamrocks/cssanimation.io@1.0.3/cssanimation.min.css");
 @import 'tailwindcss';
 
 @font-face {
@@ -20,8 +19,11 @@
   box-sizing: border-box;
 }
 
+h2{
+  font-size: 3rem !important; 
+}
+
 html {
-  height: 100vh;
   scroll-behavior: smooth;
 }
 
@@ -36,41 +38,31 @@ body {
 .Header {
   width: 100vw;
   position: relative;
+  display: flex;
+  justify-content: center;
 }
 
 nav {
-  background: radial-gradient(70% 80% at center center,hsl(0, 0%, 0%, 0.5),hsl(0,0%,0%,0.8) );
-  border: solid hsl(0, 0%, 30%, 0.25) 3px;
+  background: hsl(0,0%,0%,0.8);
+  border: solid hsl(0, 0%, 30%, 0.25) 0.25rem;
   border-radius: 50px;
   position: fixed;
   z-index: 100;
   top: 30px;
-  left: 50%;
-  transform: translate(-50%);
   backdrop-filter: blur(10px);
   color: #aaa;
   box-shadow: inset 0 0 15px -5px rgba(255,255,255,0.5);
-  margin: auto;
   font-size: 1.3rem;
 }
 
 nav ul {
   display: flex;
-  margin: 0;
-  gap: 20px;
+  gap: 1.25rem;
   justify-content: center;
-  padding-inline: 40px;
+  padding-inline: 2.5rem;
 }
 
-nav a:link {
-  cursor: pointer;
-  border-radius: 50px;
-  padding: 8px 10px;   
-  text-decoration: none;
-  color: #aaa;
-}
-
-nav a:hover{
+nav .active{
   position: relative;
   background-color: unset;
   color: #fff;
@@ -78,13 +70,30 @@ nav a:hover{
 
 nav li {
   list-style: none;
-  padding-block: 15px;
+  padding-block: 1rem;
+  cursor: pointer;
+}
+
+.link-style{
+  cursor: 'pointer';
+  border-radius: 50px;
+  padding: 8px 10px;  
+  text-decoration: none;
+  color: #aaa;
+}
+
+.link-style:hover{
+  color: #fff;
+}
+
+.link-style.active{
+  color: #fff;
 }
 
 .logo{
   position: fixed;
-  top: 30px;
-  left: 30px;
+  top: 2.75rem;
+  left: 2.75rem;
   font-family: 'Scripto', sans-serif;
   font-size: 2em;
   font-weight: normal;

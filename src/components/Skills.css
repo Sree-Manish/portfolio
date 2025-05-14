@@ -8,49 +8,49 @@
   radial-gradient(10vw 10vw at 80% 80%, rgba(255, 0, 140, 0.15), transparent),
   radial-gradient(13vw 13vw at 10% 20%, rgba(25, 0, 255, 0.315), transparent),
   rgba(10,10,10);
-  box-shadow: inset 0 0 30vw -5vw rgba(68, 0, 255,0.6)
+  box-shadow: inset 0 0 10vw -2vw rgba(67, 97, 238,0.9)
 }
 
 #Skills, :is(#Projects, #Services, #Contact)>h2{
     width: 100%;
     display: block;
-    color: white;
-    filter: drop-shadow(0 0 3px rgba(255, 255, 255));
-    text-shadow:rgba(21, 255, 255, 0.7) 0 0 3px;
-    font-size: 4em;
+    color: rgb(255,255,255);
+    filter: drop-shadow(0 0 6px rgba(116, 0, 184));
     padding-top: var(--ptop);
+    letter-spacing: 0.5rem;
 }
 
 .skills-container{
-  gap: 50px;
+  gap: 4rem;
+  padding: 70px 15vw;
 }
  
 .skcards{
-  padding: 16px;
+  padding: 1rem;
   backdrop-filter: blur(6px);
-  width: 180px;
-  box-shadow: inset 0 0 15px -2px rgba(255,255,255,0.5);
+  width: 12rem;
+  box-shadow: inset 0 0 20px -8px rgba(255,255,255,0.5);
   border-radius: 10px;
   color: white;
   font-family:'Courier New', Courier, monospace;
   font-weight: bolder;
   opacity: 0;
-  filter: contrast(1.09) brightness(10) drop-shadow(0 0 0px var(--hovercolor)) drop-shadow(0 0 28px var(--hovercolor)) drop-shadow(0 0 0px var(--hovercolor));
+  filter: drop-shadow(0 0 0px var(--hovercolor)) drop-shadow(0 0 24px var(--hovercolor)) drop-shadow(0 0 0px var(--hovercolor));
 }
 
 .skcards:hover{
-  background-color: var(--backcolor);
+  background: var(--backcolor);
   cursor: pointer;
-  transform: translateY(-10px);
+  /* transform: translateY(-10px); */
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
 }
 
 @media (max-width: 800px){
   .skcards{
-    width: 110px;
+    width: 8rem;
   }
 
   .skills-container{
-    gap: 30px;
+    gap: 1.2rem;
   }
 }

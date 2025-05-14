@@ -6,6 +6,10 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
+
+const skills = ["HTML", "CSS", "JAVASCRIPT", "NODE", "EXPRESS", "REACT", "GSAP", "GIT", "NEXT JS", "REDUX"];
+const hovcols = ['rgba(0,255,255', 'rgba(255,108,0', 'rgba(255,255,0', 'rgba(0,255,0', 'rgba(0,0,255', 'rgba(0,150,255', 'rgba(0,255,255', 'rgba(255,0,0', 'rgba(255,255,255', 'rgba(100,0,255'];
+
 export default function Skills() {
 
   useGSAP(()=>{
@@ -18,13 +22,13 @@ export default function Skills() {
         start: "top 80%",    
     }
     })
-  })
+  },[])
 
-  function SkillCard(){
-    const skills = ["HTML", "CSS", "JAVASCRIPT", "NODE", "EXPRESS", "REACT", "GSAP", "GIT", "NEXT JS", "REDUX"];
-    const hovcols = ['rgba(0,255,255', 'rgba(255,108,0', 'rgba(255,255,0', 'rgba(0,255,0', 'rgba(0,0,255', 'rgba(0,150,255', 'rgba(0,255,255', 'rgba(255,0,0', 'rgba(255,255,255', 'rgba(100,0,255'];
+  
+
+  const SkillCard = ()=>{   
     return skills.map((item,index)=>{
-      return <div key={item} className="flex flex-col justify-center items-center w-[9vw]  skcards gap-[8px]" style={{'--hovercolor': `${hovcols[index]},1)`, '--backcolor': `${hovcols[index]},0.1)`}}>
+      return <div key={item} className="flex flex-col justify-center items-center skcards" style={{'--hovercolor': `${hovcols[index]},1)`, '--backcolor': `radial-gradient(rgba(0,0,0,0.9) 75%, ${hovcols[index]},0.25))`}}>
         <img className="clear-both w-[70%] aspect-square" src={`images/${item}_fill.png`} style={{filter: 'invert(1)'}} alt={item} />
         {item} 
       </div>
@@ -33,7 +37,7 @@ export default function Skills() {
 
   return (<section>
     <h2 id="Skills" className="text-center" style={{'--ptop': '200px'}}>Skills</h2>
-    <div className="flex justify-center flex-wrap skills-container" style = {{  padding: '70px 16vw'}}>
+    <div className="flex justify-center flex-wrap skills-container">
       <SkillCard />
     </div>
     </section>

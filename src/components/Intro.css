@@ -2,7 +2,7 @@
 
 #Intro { 
   background:
-    radial-gradient(50% 60% at center bottom, rgba(0,0,0,0.9), transparent),
+    radial-gradient(80% 70% at center bottom, rgba(0,0,0,1), transparent),
     repeating-linear-gradient(
       45deg,
       transparent 0,
@@ -18,8 +18,8 @@
     linear-gradient(
       135deg,
       rgba(98, 0, 255, 0.25),
-      rgb(0,0,255,0.25),
-      rgb(75,0,130,0.25)
+      rgb(0,0,255,0.4),
+      rgb(75,0,130,0.4)
     )
     ,black; 
   width: 100vw;
@@ -31,38 +31,40 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 20vh;
+  padding-top: 12rem;
 }
 
 .backtest{
-  background: linear-gradient(to top, rgb(255, 255, 255, 0.7) 0%, rgba(21, 255, 255, 0.7) 100%);
+  background: linear-gradient(to right, rgb(128, 187, 255) 0%, rgba(100, 223, 223, 1) 100%);
   background-clip: text;
   color: transparent;
+  display: flex;
+  flex-direction: column;
 }
 
 .intname{  
   background: inherit;
-  filter: drop-shadow(0 0 5px rgba(21, 255, 255));
-  letter-spacing: 0.55vw;
-  width: 60vw;
-  text-shadow:rgba(21, 255, 255, 0.7) 0 0 3px;
+  filter: drop-shadow(0 0 4px rgba(181, 23, 158,1));
+  letter-spacing: 0.5rem;
+  width: 60rem;
+  text-shadow:rgba(181, 23, 158, 0.7) 0 0 3px;
   font-size: 4em;
 }
 
 .spec{
-  letter-spacing: 0.1vw; 
-  width: 40vw;
+  letter-spacing: 0.1rem; 
+  width: 50rem;
   font-size: 1.5em;
   overflow-y: hidden;
 }
   
 .img1 {
-  margin-inline: 20vw 4vw;
-  width: 25vw;
+  margin-inline: 20rem 6rem;
+  width: 30rem;
   aspect-ratio: 1/1.25;
   object-fit: cover;
-  border-radius: 50px;
-  filter: drop-shadow(0 0 20px rgba(0, 0, 255, 0.856)) drop-shadow(0 0 50px rgb(0,0,255,0.3));
+  border-radius: 100px;
+  filter: drop-shadow(0 0 50px rgba(114, 9, 183, 0.5)) drop-shadow(0 0 80px rgb(114, 9, 183,0.3)) contrast(1.1) saturate(1.2);
 }
 
 @media (max-width: 1400px){

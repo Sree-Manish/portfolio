@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Intro.css";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
@@ -7,7 +7,12 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Intro() {
-  document.body.style.overflow = "hidden";
+  useEffect(() => {
+    document.body.style.overflow = "hidden";
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, []);
   useGSAP(()=>{
     gsap.ticker.lagSmoothing(0);
 
@@ -56,7 +61,7 @@ export default function Intro() {
       delay: 2,
       ease: "ease.inOut"
     })
-  })
+  },[])
   
 
   return (

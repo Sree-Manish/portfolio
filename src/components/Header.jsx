@@ -1,7 +1,8 @@
 import React from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
-
+import { Link } from "react-scroll";
+ 
 export default function Header() {
 
   useGSAP(()=>{
@@ -27,29 +28,87 @@ export default function Header() {
       duration: 1,
       delay: 2
     })
-  })
+  }, [])
 
   return <div className="Header">
       <div className="logo">
         Portfolio
       </div>
       <nav>
-        <ul>
+      <ul>
           <li>
-            <a href="#Intro"><i className="fa-solid fa-user"></i></a>
+            <Link
+              to="Intro"
+              spy={true}
+              smooth={true}
+              offset={-900}
+              duration={700}
+              activeClass="active"
+              className="link-style"
+            >
+              <i className="fa-solid fa-user"></i>
+            </Link>
           </li>
-          <li><a href="#Services"><i className="fa-solid fa-handshake"></i></a></li>
           <li>
-            <a href="#Skills"><i className="fa-solid fa-book"></i></a>
+            <Link
+              to="Services"
+              spy={true}
+              smooth={true}
+              duration={700}
+              activeClass="active"
+              className="link-style"
+            >
+              <i className="fa-solid fa-handshake"></i>
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="Skills"
+              spy={true}
+              smooth={true}
+              duration={700}
+              activeClass="active"
+              className="link-style"
+            >
+              <i className="fa-solid fa-book"></i>
+            </Link>
           </li>
           {/* <li>
-            <a href="#Resume">Resume</a>
+            <Link
+              to="Resume"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+              activeClass="active"
+              style={linkStyle}
+            >
+              Resume
+            </Link>
           </li> */}
           <li>
-            <a href="#Projects"><i className="fa-solid fa-briefcase"></i></a>
+            <Link
+              to="Projects"
+              spy={true}
+              smooth={true}
+              duration={700}
+              activeClass="active"
+              className="link-style"
+            >
+              <i className="fa-solid fa-briefcase"></i>
+            </Link>
           </li>
           <li>
-            <a href="#Contact"><i className="fa-solid fa-address-card"></i></a>
+            <Link
+              to="Contact"
+              spy={true}
+              smooth={true}
+              duration={700}
+              activeClass="active"
+              className="link-style"
+            >
+              <i className="fa-solid fa-address-card"></i>
+            </Link>
           </li>
         </ul>
       </nav>

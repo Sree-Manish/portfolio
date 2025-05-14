@@ -19,9 +19,9 @@ export default function Projects() {
         start: 'top 80%',
       }
     })
-  })
+  },[])
 
-  function ProjList(){
+  const ProjList = ()=>{
     return projects.map((project) => {
         return <div className="project-card" key={project.id}>
           <img
@@ -38,7 +38,7 @@ export default function Projects() {
           </div>
         </div>
     })
-  }
+  };
 
 
   return <section id="Projects">
