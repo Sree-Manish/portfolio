@@ -47,7 +47,7 @@ export default function Header() {
               className="link-style"
             >
               <i className="fa-solid fa-user"></i>
-            </Link>
+            </Link> 
           </li>
           <li>
             <Link

@@ -76,8 +76,8 @@ export default function Intro() {
           <div className="spec">Hi I'm</div>
           <h1 className="intname">Chada Sree Manish</h1>
           <div className="spec">
-            I'm a Front End Developer, I have a passion for web development and
-            love to create websites that are visually appealing and user-friendly.
+            I'm a Full Stack Developer, I have a passion for web development and
+            love to create scalable websites that are visually appealing and user-friendly.
           </div>
         </div>
       </div>
