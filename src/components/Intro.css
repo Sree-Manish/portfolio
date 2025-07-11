@@ -1,7 +1,7 @@
 
 
 #Intro { 
-  background:
+  /* background:
     radial-gradient(80% 70% at center bottom, rgba(0,0,0,1), transparent),
     repeating-linear-gradient(
       45deg,
@@ -21,61 +21,98 @@
       rgb(0,0,255,0.4),
       rgb(75,0,130,0.4)
     )
-    ,black; 
+    ,black;  */
+  background: var(--hero-gradient);
   width: 100vw;
   height: 100vh;
   z-index: -10;
- }
+}
+
+#Intro::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at 20% 50%, rgba(0, 255, 255, 0.25) 0%, transparent 50%),
+  radial-gradient(circle at 80% 20%, rgba(255, 0, 255, 0.15) 0%, transparent 50%);
+  animation: pulse 4s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 0.5; }
+  50% { opacity: 1; }
+}
 
 .smalling{
   display: flex;
+  flex-direction: column-reverse;
   justify-content: center;
   align-items: center;
   padding-top: 12rem;
+  gap: 2rem;
 }
 
-.backtest{
-  background: linear-gradient(to right, rgb(128, 187, 255) 0%, rgba(100, 223, 223, 1) 100%);
-  background-clip: text;
-  color: transparent;
+.backtest{  
   display: flex;
   flex-direction: column;
+  align-items: center;
+  gap: 1rem;
 }
 
 .intname{  
-  background: inherit;
-  filter: drop-shadow(0 0 4px rgba(181, 23, 158,1));
+  /* filter: drop-shadow(0 0 4px rgba(181, 23, 158,1)); */
+  position: relative;
   letter-spacing: 0.5rem;
-  width: 60rem;
-  text-shadow:rgba(181, 23, 158, 0.7) 0 0 3px;
+  /* text-shadow:rgba(181, 23, 158, 0.7) 0 0 3px; */
   font-size: 4em;
+  background: linear-gradient(45deg, var(--primary-cyan), var(--primary-magenta));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-align: center;
 }
+
+/* .intname::before{
+  position: absolute;
+  content: "Chada Sree Manish";
+  letter-spacing: 0.5rem;
+  top: 0;
+  bottom: 0;
+  left: -0.25rem;
+  right: 0;
+  font-size: 1em;
+  -webkit-text-stroke: 0.25rem rgb(255,255,255, 0.3);
+  z-index: -10;
+} */
 
 .spec{
   letter-spacing: 0.1rem; 
   width: 50rem;
-  font-size: 1.5em;
+  font-size: 1.2rem;
   overflow-y: hidden;
+  text-align: center;
 }
   
 .img1 {
-  margin-inline: 20rem 6rem;
-  width: 30rem;
-  aspect-ratio: 1/1.25;
+  width: 25rem;
+  aspect-ratio: 1/1;
   object-fit: cover;
-  border-radius: 100px;
-  filter: drop-shadow(0 0 50px rgba(114, 9, 183, 0.5)) drop-shadow(0 0 80px rgb(114, 9, 183,0.3)) contrast(1.1) saturate(1.2);
+  border-radius: 50%;
+  filter: contrast(1.1) saturate(1.2);
 }
 
 @media (max-width: 1400px){
   .smalling{
-    flex-direction: column-reverse;
     padding-top: 10vh;
+    gap: 3rem;
   }
 
   .backtest{
     margin-inline: auto;
     margin-block: 5vh;
+    gap: 0.5rem;
   }
 
   .spec{
@@ -87,11 +124,11 @@
   .intname{
     width: 60vw;
     text-align: center;
-    font-size: 2em;
+    font-size: 4em;
   }
 
   .img1{
-    width: 50vw;
+    width: 30vw;
     margin-inline: auto;
     aspect-ratio: 1/1;
   }
@@ -102,6 +139,7 @@
 
   .backtest{
     margin-block: 10vw;
+    gap: 2rem;
   }
 
   .spec{
@@ -109,16 +147,19 @@
   }
 
   .img1{
-    width: 80vw;
+    width: 60vw;
     aspect-ratio: 1/1;
   }
 
   .smalling{
     padding-top: 10vh;
+    gap:6rem;
   }
 
   .intname{
     width: 80vw;
+    font-size: 2em;
+    letter-spacing: 0.2rem;
     text-align: center;
   }
 
