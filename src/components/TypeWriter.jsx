@@ -1,6 +1,19 @@
 import { TypeAnimation } from "react-type-animation";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
 
 const TypeWriter = () => {
+
+  useGSAP(()=>{
+    gsap.fromTo(".TypeWriting",{
+      opacity: 0
+    },{
+      opacity: 1,
+      duration: 2,
+      delay: 2
+    })
+  },[])
+
   return (
     <TypeAnimation
       sequence={[
@@ -12,13 +25,14 @@ const TypeWriter = () => {
         1200,
       ]}
       wrapper="div"
-      speed={160}
+      speed={200}
       style={{
         fontSize: "1.5em",
         display: "inline-block",
-        color: "var(--text-muted)",
+        color: "#00ffff",
       }}
       repeat={Infinity}
+      className = "TypeWriting"
     />
   );
 };

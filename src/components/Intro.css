@@ -50,15 +50,15 @@
   flex-direction: column-reverse;
   justify-content: center;
   align-items: center;
-  padding-top: 12rem;
-  gap: 2rem;
+  padding-top: 10rem;
+  gap: 3rem;
 }
 
 .backtest{  
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1rem;
+  gap: 2rem;
 }
 
 .intname{  
@@ -67,6 +67,7 @@
   letter-spacing: 0.5rem;
   /* text-shadow:rgba(181, 23, 158, 0.7) 0 0 3px; */
   font-size: 4em;
+  line-height: 1em;
   background: linear-gradient(45deg, var(--primary-cyan), var(--primary-magenta));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -100,7 +101,52 @@
   aspect-ratio: 1/1;
   object-fit: cover;
   border-radius: 50%;
-  filter: contrast(1.1) saturate(1.2);
+  z-index: 2;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 20px;
+  animation: slideInLeft 1s ease-out 0.8s both;
+}
+
+.buttons {
+  padding: 12px 30px;
+  border: none;
+  border-radius: 50px;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1rem;
+}
+
+.projects-btn {
+  background: linear-gradient(45deg, #00ffff, #ff00ff);
+  color: #000;
+  font-weight: 700;
+  box-shadow: 0 10px 20px rgba(0, 255, 255, 0.3);
+}
+
+.projects-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 30px rgba(0, 255, 255, 0.5);
+}
+
+.contact-btn {
+  background: rgba(0, 0, 0, 0.3);
+  color: #00ffff;
+  border: 2px solid #00ffff;
+  backdrop-filter: blur(10px);
+}
+
+.contact-btn:hover {
+  background: rgba(0, 255, 255, 0.1);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 255, 255, 0.3);
 }
 
 @media (max-width: 1400px){

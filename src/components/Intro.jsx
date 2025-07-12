@@ -4,6 +4,7 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import TypeWriter from "./TypeWriter";
+import { Link } from "react-scroll";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -15,12 +16,12 @@ export default function Intro() {
     };
   }, []);
   useGSAP(()=>{
-    gsap.ticker.lagSmoothing(0);
+    // gsap.ticker.lagSmoothing(0);
 
     gsap.from(".intname", {
       y:-1000,
-      duration: 2,
-      delay: 2,
+      duration: 3,
+      delay: 1,
       ease: "bounce.out",
     })
 
@@ -60,6 +61,16 @@ export default function Intro() {
       delay: 2,
       ease: "ease.inOut"
     })
+
+    gsap.fromTo(".buttons",{
+      opacity: 0,
+      y: 50
+    },{
+      opacity: 1,
+      duration: 0.75,
+      delay: 3,
+      y: 0
+    })
   },[])
   
 
@@ -75,6 +86,22 @@ export default function Intro() {
           <h1 className="intname">Chada Sree Manish</h1>
           <TypeWriter />
           <div className="spec">Crafting scalable, visually stunning web experiences that users love</div>
+          <div class="cta-buttons">
+            <Link
+              to="Projects"
+              spy={true}
+              smooth={true}
+              duration={700}
+              className="buttons projects-btn"
+            >View my Work</Link>
+            <Link
+              to="Contact"
+              spy={true}
+              smooth={true}
+              duration={700}
+              className="buttons contact-btn"
+            >Get in Touch</Link>
+          </div>
         </div>
       </div>
     </section>
