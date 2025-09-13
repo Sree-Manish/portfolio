@@ -34,7 +34,10 @@ export default function Projects() {
             <p className="project-description">{project.desc}</p>
           </div>
           <div className="text-center">
-            <button className="visit-site">Visit Site</button>
+            <a href={project.link}>
+              <button className="visit-site">Visit Site
+              </button>
+            </a>
           </div>
         </div>
     })

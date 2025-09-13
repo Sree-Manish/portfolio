@@ -1,27 +1,30 @@
 export const projects = [
     {
         id: 1,
-        name: 'Real Time Chat App',
-        image: 'proj-images/chat-app.png',
+        name: 'Note-Forger AI Application',
+        image: 'proj-images/pathfinder.png',
         desc: '',
+        link: "https://note-forger.vercel.app/"
     },
     {
         id: 2,
-        name: 'E-commerce Website',
-        image: 'proj-images/ecommerce.png',
+        name: 'Real Time Chat App',
+        image: 'proj-images/chat-app.png',
         desc: '',
+        link: "https://chatbox-proj.vercel.app/login"
     },
     {
         id: 3,
-        name: 'Codepen Clone',
-        image: 'proj-images/Codepen.png',
+        name: 'E-commerce Website',
+        image: 'proj-images/ecommerce.png',
         desc: '',
+        link: "https://ecom-redux-objcart.vercel.app/"
     },
     {
         id: 4,
-        name: 'Path Finding Visualizer',
-        image: 'proj-images/pathfinder.png',
+        name: 'Codepen Clone',
+        image: 'proj-images/Codepen.png',
         desc: '',
-    },
- 
+        link: ""
+    }, 
 ];
