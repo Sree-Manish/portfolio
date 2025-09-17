@@ -15,7 +15,6 @@
     width: 100%;
     display: block;
     color: rgb(255,255,255);
-    filter: drop-shadow(0 0 6px rgba(116, 0, 184));
     padding-top: var(--ptop);
     letter-spacing: 0.5rem;
 }

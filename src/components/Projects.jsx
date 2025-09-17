@@ -4,6 +4,7 @@ import { projects } from "./ProjData";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import FloatingShapes from "./FloatingShapes";
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -34,7 +35,7 @@ export default function Projects() {
             <p className="project-description">{project.desc}</p>
           </div>
           <div className="text-center">
-            <a href={project.link}>
+            <a href={project.link} target="_blank">
               <button className="visit-site">Visit Site
               </button>
             </a>
@@ -44,10 +45,13 @@ export default function Projects() {
   };
 
 
-  return <section id="Projects">
-    <h2 className="Projects text-center" style={{'--ptop': '0px'}}>Projects</h2>
-    <div className="project-card-container">
-      <ProjList />
-    </div>
-  </section>;
+  return (
+    <section id="Projects">
+      <FloatingShapes/>
+      <h2 className="Projects text-center" style={{'--ptop': '0px'}}>Projects</h2>
+      <div className="project-card-container">
+        <ProjList />
+      </div>
+    </section>
+  )
 }

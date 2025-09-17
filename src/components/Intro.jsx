@@ -5,6 +5,7 @@ import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import TypeWriter from "./TypeWriter";
 import { Link } from "react-scroll";
+import FloatingShapes from "./FloatingShapes";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -76,6 +77,7 @@ export default function Intro() {
 
   return (
     <section id="Intro">
+      {/* <FloatingShapes/> */}
       <div className="smalling">
         <img
           className="img1"
@@ -87,20 +89,22 @@ export default function Intro() {
           <TypeWriter />
           <div className="spec">Crafting scalable, visually stunning web experiences that users love</div>
           <div class="cta-buttons">
-            <Link
-              to="Projects"
-              spy={true}
-              smooth={true}
-              duration={700}
-              className="buttons projects-btn"
-            >View my Work</Link>
-            <Link
-              to="Contact"
-              spy={true}
-              smooth={true}
-              duration={700}
-              className="buttons contact-btn"
-            >Get in Touch</Link>
+            <div className="buttons projects-btn">
+              <Link
+                to="Projects"
+                spy={true}
+                smooth={true}
+                duration={700}
+              >View my Work</Link>
+            </div>
+            <div className="buttons contact-btn">
+              <Link
+                to="Contact"
+                spy={true}
+                smooth={true}
+                duration={700}
+              >Get in Touch</Link>
+            </div>
           </div>
         </div>
       </div>

@@ -8,7 +8,6 @@ function App() {
   return (
     <>
       <div className="App">
-        <FloatingShapes />
         <Header />
         <Body />
         <Footer />

@@ -1,8 +1,9 @@
-import React from 'react'
+import FloatingShapes from './FloatingShapes'
 
 export default function Services() {
   return (
     <section id="Services">
+        <FloatingShapes/>
         <h2 className="text-center">Services</h2>
         <div className="w-full">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-[2rem] fa-2x">

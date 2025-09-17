@@ -97,10 +97,10 @@
 }
   
 .img1 {
-  width: 25rem;
+  width: 20rem;
   aspect-ratio: 1/1;
   object-fit: cover;
-  border-radius: 50%;
+  border-radius: 40%;
   z-index: 2;
 }
 
@@ -128,12 +128,12 @@
   background: linear-gradient(45deg, #00ffff, #ff00ff);
   color: #000;
   font-weight: 700;
-  box-shadow: 0 10px 20px rgba(0, 255, 255, 0.3);
+  box-shadow: 0 10px 10px rgba(0, 255, 255, 0.3);
 }
 
 .projects-btn:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 15px 30px rgba(0, 255, 255, 0.5);
+  transform: translateY(-10px);
+  /* box-shadow: 0 15px 30px rgba(0, 255, 255, 0.5); */
 }
 
 .contact-btn {

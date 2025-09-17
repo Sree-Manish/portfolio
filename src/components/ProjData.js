@@ -2,7 +2,7 @@ export const projects = [
     {
         id: 1,
         name: 'Note-Forger AI Application',
-        image: 'proj-images/pathfinder.png',
+        image: 'proj-images/note-forger.png',
         desc: '',
         link: "https://note-forger.vercel.app/"
     },

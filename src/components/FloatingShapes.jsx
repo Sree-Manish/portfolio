@@ -10,14 +10,14 @@ const FloatingShapes = () => {
   const createFloatingShape = () => {
     const el = document.createElement('div');
     el.innerHTML = shapes[Math.floor(Math.random() * shapes.length)];
-    el.style.position = 'fixed';
+    el.style.position = 'absolute';
     el.style.color = colors[Math.floor(Math.random() * colors.length)];
     el.style.fontSize = `${Math.random() * 50 + 10}px`;
     el.style.opacity = '0.1';
     el.style.left = `${Math.random() * 100}%`;
     el.style.top = `${Math.random() * 100}%`;
     el.style.pointerEvents = 'none';
-    el.style.zIndex = '1';
+    el.style.zIndex = '-1';
 
     containerRef.current.appendChild(el);
 
