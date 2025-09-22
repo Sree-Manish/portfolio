@@ -26,18 +26,18 @@ export default function Intro() {
       ease: "bounce.out",
     })
 
-    gsap.to(".smalling",{
-      scale: 0.8,
-      ease: "bounce.In",
-      scrollTrigger: {
-        trigger: '.Main',
-        start: "top bottom",
-        end: "top 100",
-        scrub: 0.5,
-        pin: "#Intro",
-        pinSpacing: false
-      }
-    })
+    // gsap.to(".smalling",{
+    //   scale: 0.8,
+    //   ease: "bounce.In",
+    //   scrollTrigger: {
+    //     trigger: '.Main',
+    //     start: "top bottom",
+    //     end: "top 100",
+    //     scrub: 0.5,
+    //     pin: "#Intro",
+    //     pinSpacing: false
+    //   }
+    // })
 
     gsap.fromTo(".spec",{
       y: 200,
@@ -88,7 +88,7 @@ export default function Intro() {
           <h1 className="intname">Chada Sree Manish</h1>
           <TypeWriter />
           <div className="spec">Crafting scalable, visually stunning web experiences that users love</div>
-          <div class="cta-buttons">
+          <div className="cta-buttons">
             <div className="buttons projects-btn">
               <Link
                 to="Projects"
