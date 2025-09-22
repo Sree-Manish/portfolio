@@ -26,18 +26,18 @@ export default function Intro() {
       ease: "bounce.out",
     })
 
-    // gsap.to(".smalling",{
-    //   scale: 0.8,
-    //   ease: "bounce.In",
-    //   scrollTrigger: {
-    //     trigger: '.Main',
-    //     start: "top bottom",
-    //     end: "top 100",
-    //     scrub: 0.5,
-    //     pin: "#Intro",
-    //     pinSpacing: false
-    //   }
-    // })
+    gsap.to(".smalling",{
+      scale: 0.8,
+      ease: "bounce.In",
+      scrollTrigger: {
+        trigger: '.Main',
+        start: "top bottom",
+        end: "top 100",
+        scrub: 0.5,
+        pin: "#Intro",
+        pinSpacing: false
+      }
+    })
 
     gsap.fromTo(".spec",{
       y: 200,
@@ -77,7 +77,7 @@ export default function Intro() {
 
   return (
     <section id="Intro">
-      {/* <FloatingShapes/> */}
+      <FloatingShapes/>
       <div className="smalling">
         <img
           className="img1"
