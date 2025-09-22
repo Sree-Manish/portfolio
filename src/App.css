@@ -15,8 +15,8 @@
 
 @font-face {
   font-family: 'Scripto';
-  src: url('fonts/Scripto.woff2') format('woff2'),
-      url('fonts/Scripto.woff') format('woff');
+  src: url('/fonts/Scripto.woff2') format('woff2'),
+      url('/fonts/Scripto.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -60,7 +60,7 @@ nav {
   border: solid hsl(0, 0%, 30%, 0.25) 0.25rem;
   border-radius: 50px;
   position: fixed;
-  z-index: 100;
+  z-index: 11;
   top: 30px;
   backdrop-filter: blur(10px);
   color: #aaa;
@@ -113,6 +113,7 @@ nav li {
   font-style: normal;
   text-shadow:   
          2px  2px 0 gray;
+  z-index: 10;
 }
 
 @media (max-width:800px){

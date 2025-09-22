@@ -29,12 +29,12 @@ export default function Contact(){
   return (
     <section id="Contact" style={{paddingBottom: '6vh'}}>
       <h2 className="text-center">Contact Me</h2>
-      <div className="container contact_container">
+      <div className="contact_container">
         <div className="contact_options">
           <article className="contact_option">
             <i className="fa-solid fa-envelope contact_option-icon" />
-            <h4>Email</h4>
-            <h5>csmanish2468@gmail.com</h5>
+            <div className="cont-mail-1">Email</div>
+            <div className="cont-mail-2">csmanish2468@gmail.com</div>
             <a
               href="mailto:csmanish2468@gmail.com"
               target="_blank"

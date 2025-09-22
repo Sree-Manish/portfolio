@@ -49,9 +49,7 @@ export default function Intro() {
       duration: 1,
       delay: 2,
       onComplete: ()=>{
-        setTimeout(
           document.body.style.overflow = ""
-        ,3000)
       }
     })
 
@@ -89,22 +87,22 @@ export default function Intro() {
           <TypeWriter />
           <div className="spec">Crafting scalable, visually stunning web experiences that users love</div>
           <div className="cta-buttons">
-            <div className="buttons projects-btn">
+            <button className="buttons projects-btn">
               <Link
                 to="Projects"
                 spy={true}
                 smooth={true}
                 duration={700}
-              >View my Work</Link>
-            </div>
-            <div className="buttons contact-btn">
+              >My Work</Link>
+            </button>
+            <button className="buttons contact-btn">
               <Link
                 to="Contact"
                 spy={true}
                 smooth={true}
                 duration={700}
               >Get in Touch</Link>
-            </div>
+            </button>
           </div>
         </div>
       </div>

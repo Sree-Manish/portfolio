@@ -4,12 +4,11 @@ function Footer() {
   return (
     <div id="Footer" className="bg-black">
       
-
-            <footer className="footer flex justify-between sm:footer-horizontal bg-neutral text-neutral-content items-center" style={{padding: '2rem'}}>
-              <aside className="flex items-center">
+            <footer className="footer flex justify-between sm:footer-horizontal items-center z-10 bg-black" style={{padding: '2rem'}}>
+              <aside className="flex items-center gap-4">
               <svg
-            width="36"
-            height="36"
+            width="24"
+            height="24"
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
             fillRule="evenodd"

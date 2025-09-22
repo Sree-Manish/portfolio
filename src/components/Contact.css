@@ -2,8 +2,8 @@
     padding-block: 15vh;
 }
 
-.container.contact_container{
-    width: 58%;
+.contact_container{
+    width: 75%;
     display: grid;
     grid-template-columns: 30% 58%;
     gap: 12%;
@@ -29,6 +29,15 @@
 .contact_option:hover{
     background: transparent;
     border-color: #2c2c6c ;
+}
+
+.cont-mail-1{
+    font-size: 24px;
+}
+
+.cont-mail-2{
+    font-size: 1rem;
+    text-wrap: wrap;
 }
 
 .contact_option-icon{
@@ -74,13 +83,14 @@ input, textarea{
 }
 
 @media screen and (max-width:1024px){
-   .container.contact_container{
-    grid-template-columns: 1fr;
-    gap: 2rem;
+    .contact_container{
+        grid-template-columns: auto;
+        gap: 2rem;
    }
-    }
-    @media screen and (max-width:600px){
-    .container.contact_container{
+}
+
+@media screen and (max-width:600px){
+    .contact_container{
         width: 90%;
     }
-    }
+}

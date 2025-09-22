@@ -4,7 +4,6 @@ import Skills from "./Skills";
 import Projects from "./Projects";
 import Services from "./Services";
 import Contact from "./Contact";
-import FloatingShapes from "./FloatingShapes";
 
 export default function Body() {
   return (
