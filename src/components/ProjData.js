@@ -11,7 +11,7 @@ export const projects = [
         name: 'Real Time Chat App',
         image: 'proj-images/chat-app.png',
         desc: '',
-        link: "https://chatbox-proj.up.raolway.app/login"
+        link: "https://chatbox-proj.up.railway.app/login"
     },
     {
         id: 3,
